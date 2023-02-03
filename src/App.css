@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.Board {
+  margin-top: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+}
+
+.imgR {
+  content: url(/public/logo192.png);
+}
+
+.image {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  outline: none;
+}
+
+.visible {
+  width: 120px;
+  height: 120px;
+  scale: 1.0;
+  opacity: 1;
+  border-radius: 10px;
+  border: 1px solid #41736c;
+  transition: all 0.5s;
+  background-color: rgba(9, 160, 107, 0.2);
+}
+
+.invisible {
+  transition: all 0.5s;
+  transform: rotate3d(1,0,0,180deg);
+  width: 120px;
+  height: 120px;
+  content: url(/public/back.png);
+  background-color: rgba(21, 194, 142, 0.2);
+  border-radius: 10px;
+
+}
+
+.alw_visible {
+  width: 120px;
+  height: 120px;
+  scale: 1.0;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #41736c;
+  background: url(/public/check-mark.png);
+}
